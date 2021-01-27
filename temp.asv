@@ -1,0 +1,122 @@
+% 0.0001
+Identified frequencies are 
+
+fid =
+
+    0.0298    0.4813    0.9086    0.6977    0.9988    0.3923    0.3438    0.3437
+
+The frequency separation is
+
+delta_f =
+
+   1.0000e-04
+
+The true frequency loation is
+
+f =
+
+    0.3923    0.9988    0.3437    0.9086    0.6977    0.0298    0.4813    0.3438
+   The recovery error is
+
+res_err =
+
+   2.5026e-09
+
+% 0.0003
+Identified frequencies are 
+
+fid =
+
+    0.0298    0.4813    0.9086    0.6977    0.3923    0.9988    0.3440    0.3437
+
+The frequency separation is
+
+delta_f =
+
+   3.0000e-04
+
+The true frequency loation is
+
+f =
+
+    0.3923    0.9988    0.3437    0.9086    0.6977    0.0298    0.4813    0.3440
+
+The recovery error is
+
+res_err =
+
+   8.6000e-10
+
+% 0.001
+The true frequency loation is
+
+f =
+
+    0.3923    0.9988    0.3437    0.9086    0.6977    0.0298    0.4813    0.3447
+
+Identified frequencies are 
+
+fid =
+
+    0.4813    0.0298    0.9086    0.3923    0.9988    0.6977    0.3447    0.3437
+
+The recovery error is
+
+res_err =
+
+   8.9444e-09
+% 0.003
+The true frequency loation is
+
+f =
+
+    0.3923    0.9988    0.3437    0.9086    0.6977    0.0298    0.4813    0.3467
+
+Identified frequencies are 
+
+fid =
+
+    0.4813    0.0298    0.3923    0.9988    0.6977    0.9086    0.3467    0.3437
+
+The recovery error is
+
+res_err =
+
+   2.9204e-09
+% 0.01
+The true frequency loation is
+
+f =
+
+    0.3923    0.9988    0.3437    0.9086    0.6977    0.0298    0.4813    0.3537
+
+Identified frequencies are 
+
+fid =
+
+    0.4813,0.0298    0.3923    0.9988    0.3537    0.6977    0.3437    0.9086
+
+The recovery error is
+
+res_err =
+
+   1.6709e-09
+% 0.03
+
+The true frequency loation is
+
+f =
+
+    0.3923    0.9988    0.3437    0.9086    0.6977    0.0298    0.4813    0.3737
+
+Identified frequencies are 
+
+fid =
+
+    0.3923,0.3437,0.0298,0.3737,0.6977,0.4813,0.9988,0.9086
+
+The recovery error is
+
+res_err =
+
+   8.2556e-09
