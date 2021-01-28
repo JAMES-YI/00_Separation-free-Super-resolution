@@ -4,7 +4,9 @@
 % Created by JYI, 03/21/2020
 % Modified by JYI, 01/26/2021
 % - ToDo: documentation
+
 clear all; clc
+
 %% N = 127
 % - use interpolation to estimate the relation between frequency separation
 %   and atom separation

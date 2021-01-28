@@ -22,8 +22,7 @@
 % - the CVX solver is needed
 % - change delta_f to control the minimal frequency separation
 %
-% Created by JYI, 10/24/2019, jirong-yi@uiowa.edu, based on the version
-% created on 10/10/2017 by JYI.
+% Created by JYI, 10/24/2019, jirong-yi@uiowa.edu, based on the version created on 10/10/2017 by JYI.
 
 clear all; close all; clc; warning off;
 
@@ -41,7 +40,7 @@ s = 8; t = 0:(n-1);
 % Observation type
 obstype = 'Noisy'; 
 if strcmp(obstype,'Noisy')
-    Pn = 0.1;
+    Pn = 1.5;
     delta_f_Vec = 5*10^(-3);
 elseif strcmp(obstype,'Noiseless')
     JYI = 0;
@@ -57,8 +56,11 @@ for i=1:2
     solver = solver_Vec(i);
     
     for delta_f=delta_f_Vec
+        
+        
         sep = num2str(delta_f);
-        figname = sprintf('%s_%s_sep_%s_log',solver{1},obstype,sep(3:end));
+        figname = sprintf('%s_%s_sep_%s_log',...
+            solver{1},obstype,sep(3:end));
         
         f = zeros(1,s);
         f(1:s-1) = [0.3923, 0.9988, 0.3437, 0.9086, 0.6977, 0.0298, 0.4813];
@@ -124,7 +126,7 @@ for i=1:2
         elseif strcmp(solver,'ANM')
 
             % solve primal problem of atomic norm minimization
-            cvx_begin sdp
+            cvx_begin sdp quiet
             variable u(n,1) complex
             variable ua(n,1) complex
             variable sv complex
@@ -139,7 +141,7 @@ for i=1:2
             clear cvx_*
 
             % solve dual problem of ANM
-            cvx_begin
+            cvx_begin quiet
                 variable q(n) complex;
                 variable H(n,n) hermitian;
 
